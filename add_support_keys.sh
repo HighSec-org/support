@@ -39,4 +39,4 @@ echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBA
 sudo chown -R hsadmin:hsadmin /home/hsadmin/.ssh/
 
 #Generate SSH host print
-ssh-keygen -l -f ~/.ssh/host_fingerprint
+ssh-keygen -l -f /home/hsadmin/.ssh/host_fingerprint
