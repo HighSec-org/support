@@ -1,0 +1,48 @@
+#cloud-config
+
+hostname: rancherX
+
+rancher:
+  network:
+    interfaces:
+      eth*:
+        dhcp: false
+      eth0:
+        dhcp: true
+      eth1:
+        address: 2605:aa80:0:3::420/64
+        gateway: 2605:aa80:0:3::1
+    dns:
+      nameservers:
+        - 2001:470:20::2
+        - 2a00:f826:8:1::254
+        - 8.8.4.4
+
+ssh_authorized_keys:
+ - ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAC0qQN/U2mnpF8zhVN9qkM7KGQGLYuGxFMEeJ+1V6mxT5Tnwh1q/SuNA6RYlntX4XslO93rSyFV/COx+tZT57lajAE9qBcrQZr1yZnyj+roB6V7dZCETvXgc+FVbXQrH+NDeAOiOQCbReNwJf3vXvy6wfL/XQhjMvavb0M1+mGXvigGyg== HighSec_Admin
+ - ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAExsbWV5bFMYqp5H+TXTYj7sRGFaa4RJ7yefrPSAwT2Ga5NCMvHBUPz7lNX4oo1lks5FZ1niN8xwf/c2y/ZthJQPwF0Lj3MfYCr0uBAOgSsNA58sYfSs0YQGYw4JGR5RIav8sEuMk1A1Ej/XnffRduC0oQVRsANuyrWEAmps0//JtvNDw== HighSec_Ansible
+ - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDTRP4eG4Vu3HUhZ0ZgTCfbOxDn90P8Lz9f+XGABaTlTjDRHqoyg6xs7kjdwKzer8yNhEB96mRF1Q2E1QhoN8sHOxffSXjOjk4XpRmExsF8zFV55ec6pztyrApjg4+BWpIAonDfS02Dd2yIyn3kWUPj4vvJY7luXLNrBvzY6rW9LDdDn7apCalwpDp5kOt+7gA2rZvyIDaWDMPaToj2nQvAqSQi6BIeN2huLP29iwsYPfnMDEhMLsYXdmzDk0i7O6GFpRKsk/mQjkn3t965EWhNPDf0dASJgmC4k3FREeESYYW3V7KGyLZjNaudZvSq/oGPN4LE0A8gWcFnqDtwMCeig9eF3qBye+o9w2MWB3W3OaLRDdrkWixpKfj4oCkmXaF2BbrVAoJQQBN52zR9m6NFMi1STIjyZDyeXUVAQnLQIlc/0EivadbeD2lNLBX0CBMoMhxrUhF1+t5Gd1bRLiO/ng3wymhuFl7gVUjk4Afjg2B57BJ8l5hcPpvGgl6SLXc= HighSec_Ansible
+ - ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAAbsA7PWTZbMt+0MMGzuJEL1jxmaV3YVYDdnCg8G4qHuStVxnUNd1kpay9FVt31ZrsvFDfJJBWYMr1l+rVw+o4f3wGHpV5BCxgUxe40kkDGHWXndcq4Q8N5W71nlA47zZP42Ds9MlHi9+GXqZFVSCNV4ALxWEcKj5QrL0tErXVW3ACMTQ== HighSec_Bariel
+ - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDcFXmRazD2GwNPSYqDIu/zj9PY4IEmDHiLNKpxTmLyeasDAPCMAN6akBJDLx2KtghMVHvO/ohIP0mqw//caG4CStFVl9yuORzAl7rywnF9QD6jLabNQ/PticB9DdRzs6nzPIxDPTxxMEmse2H2tjlm2Pu6RTpsMVxliIwi0eMda3pZvIcx2cmny4z7K/+vU8gVz9G4cUxli7l5fuwZk+90QV7qkhuku5npjGrTKvKEOuQRcGr1mxaDoennvSPsGDd3Q4fuggI9fuWmEewUOIMRPB8gnTscm/mzuMgDyEZmY7kBIeurAaQsKqIJUCLeynhcfdKdxVyOURA+g/G11qewe8/hCUn3JvuPPuhwY0PXmf65iLuoSVDsOtfrFfA5XKu/AjMsCTekUuBzelg/W6xeuepSTN3j7QyDxabEwXCu9KzcQ9oo9CKBWDB/wOSnFVYrnU5lmJdcldRzp4R6lGOxEAuoIAj4zlvkBclsroYFsX1F0EfH6kTc6wkBn5T+3DU= HighSec_Bariel
+
+mounts:
+  # Mount NFS4 share
+  # Note: Mount paths for nfs/nfs4 mounts are created automatically.
+  - ["<nfs_4_server_ip>:/", "/mnt/nfs", "nfs4", "<optional mount options>"]
+  # Note: If disk is not pre-formatted, use `runcmd` cloud-config directive to create filesystem
+  # Note: Mount path needs to exist. Use `runcmd` to create if necessary.
+  - ["/dev/nvme0n1p1","/mnt/data","ext4","<optional mount options>"]
+
+sysctl:
+  vm.max_map_count: 262144
+
+docker:
+  registry_mirror: "https://mirror.gcr.io"
+  extra_args: ['--bip=172.20.0.1/16','--fixed-cidr=172.20.0.0/17']
+  engine: docker-17.03.2-ce        
+ 
+registry_auths:
+  https://index.docker.io/v1/:
+    username: me
+    password: secret
+
