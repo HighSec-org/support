@@ -25,8 +25,6 @@ sudo chown -R hsansible:hsansible /home/hsansible/.ssh/
 
 #Create the Highsec Admin user for HighSec Support.
 sudo useradd -m -G wheel hsadmin
-#Add hsadmin to sudoers, for the HighSec Admin
-echo "hsadmin       ALL=(ALL)       NOPASSWD: ALL" | sudo tee -a /etc/sudoers.d/highsecadmin
 
 #Add SSH keys to the HighSec Admin User, for support access.
 mkdir -p /home/hsadmin/.ssh && chmod 700 /home/hsadmin/.ssh
