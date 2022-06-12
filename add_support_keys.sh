@@ -11,20 +11,20 @@ echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBA
 
 
 
-#Create HighSec Ansible user and add them to the wheel group.
-sudo useradd -m -r -G wheel -U hsansible
+#Create HighSec Mucalinda user and add them to the wheel group.
+# sudo useradd -m -r -G -U hsmucalinda
 #If this server uses KVM Virtualization,add hsansible user to that group.
-sudo usermod --append --groups libvirt hsansible
+sudo usermod --append --groups libvirt hsmucalinda
 #Add hsansible to sudoers
-echo "hsansible       ALL=(ALL)       NOPASSWD: ALL" | sudo tee -a /etc/sudoers.d/highsecansible
-mkdir -p /home/hsansible/.ssh && chmod 700 /home/hsansible/.ssh
-touch /home/hsansible/.ssh/authorized_keys && chmod 600 /home/hsansible/.ssh/authorized_keys
+echo "hsmucalinda       ALL=(ALL)       NOPASSWD: ALL" | sudo tee -a /etc/sudoers.d/highsecmucalinda
+mkdir -p /home/hsmucalinda/.ssh && chmod 700 /home/hsmucalinda/.ssh
+touch /home/hsmucalinda/.ssh/authorized_keys && chmod 600 /home/hsmucalinda/.ssh/authorized_keys
 echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAExsbWV5bFMYqp5H+TXTYj7sRGFaa4RJ7yefrPSAwT2Ga5NCMvHBUPz7lNX4oo1lks5FZ1niN8xwf/c2y/ZthJQPwF0Lj3MfYCr0uBAOgSsNA58sYfSs0YQGYw4JGR5RIav8sEuMk1A1Ej/XnffRduC0oQVRsANuyrWEAmps0//JtvNDw== HighSec_Ansible" >> /home/hsansible/.ssh/authorized_keys
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDTRP4eG4Vu3HUhZ0ZgTCfbOxDn90P8Lz9f+XGABaTlTjDRHqoyg6xs7kjdwKzer8yNhEB96mRF1Q2E1QhoN8sHOxffSXjOjk4XpRmExsF8zFV55ec6pztyrApjg4+BWpIAonDfS02Dd2yIyn3kWUPj4vvJY7luXLNrBvzY6rW9LDdDn7apCalwpDp5kOt+7gA2rZvyIDaWDMPaToj2nQvAqSQi6BIeN2huLP29iwsYPfnMDEhMLsYXdmzDk0i7O6GFpRKsk/mQjkn3t965EWhNPDf0dASJgmC4k3FREeESYYW3V7KGyLZjNaudZvSq/oGPN4LE0A8gWcFnqDtwMCeig9eF3qBye+o9w2MWB3W3OaLRDdrkWixpKfj4oCkmXaF2BbrVAoJQQBN52zR9m6NFMi1STIjyZDyeXUVAQnLQIlc/0EivadbeD2lNLBX0CBMoMhxrUhF1+t5Gd1bRLiO/ng3wymhuFl7gVUjk4Afjg2B57BJ8l5hcPpvGgl6SLXc= HighSec_Ansible" >> /home/hsansible/.ssh/authorized_keys
-sudo chown -R hsansible:hsansible /home/hsansible/.ssh/
+sudo chown -R hsmucalinda:hsmucalinda /home/hsmucalinda/.ssh/
 
 #Create the Highsec Admin user for HighSec Support.
-sudo useradd -m -G wheel hsadmin
+# sudo useradd -m -G wheel hsadmin
 
 #Add SSH keys to the HighSec Admin User, for support access.
 mkdir -p /home/hsadmin/.ssh && chmod 700 /home/hsadmin/.ssh
