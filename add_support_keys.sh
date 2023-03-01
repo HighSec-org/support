@@ -23,7 +23,7 @@ mkdir -p $mucalinda_home/.ssh && chmod 700 $mucalinda_home/.ssh
 touch $mucalinda_home/.ssh/authorized_keys && chmod 600 $mucalinda_home/.ssh/authorized_keys
 echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAGCnTqsyzNRQm5V5Ajo090gQ75uY+1PwzK4F3hb8rpFKo0ftsClFDwOhlSQM9/x6EzNn2q5onmz538urfgwHFxDiADyy0uwxhkgBVZiSb2wc6a+71fJjMeVs02PEjotZZDcIoXu574rIpIVq4ycIg0My/W20DLgZZaVFPdS3yVMBpY+hA== HighSec_Ansible" >> $mucalinda_home/.ssh/authorized_keys
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsYwxTnRau6mJkT2B2qgTHKCs82q3Q1xO7C0pwSrOApTikDRv5XE4QE95Qjl852GvPR8335oVvZwXCgTPXMu1vu0DfBx+k3JEOe6uzQdD080ibhttps://raw.githubusercontent.com/HighSec-org/support/main/add_support_keys.sh9fJFUl/qyQrceBpQer2fngPnr2TXkvnHAm3QF3KvN0jS9bhDeqAngibNpfQTXQl2gU8F3khdqLv4VwEtLlW5hKhs5x6BM3ax998FkLhWSLRgLRREWvvVsY64+nKzzyUFJTXCmu8J+3Dgy7RnQPBAoQSs/MeCIb8uzFb4yVnndQHh359o4STIw9I8tvejz2yR8aOVyQxsOAua6bLyV5KI25UtxuvyI40MDxS38uHFl+hXqi/bxV4WxohlP2zJv1jetXnWyBmwr59FhbddTfEmT3fT01E9IGST5bNl5Kk0xcmeA2dsq2vH6jo6sFdPdfHWpJVvjuR0lFXjZMqyo2WiU9++PY7ZrX9B7qlrq//UPkNejjVmfZ5TC/yQcARm/ycSNtQZjnTr7SZg12QB3p0= HighSec_Ansible" >> $mucalinda_home/.ssh/authorized_keys
-sudo chown -R hs_mucalinda:highsec $mucalinda_home/.ssh/
+sudo chown -R hs_mucalinda:highsec $mucalinda_home/;sudo chown -R hs_mucalinda:highsec $mucalinda_home/.ssh/
 
 #Create HighSec Gir user.
 sudo useradd -G highsec -m hs_gir
@@ -31,10 +31,10 @@ gir_home=$(sudo -u "hs_gir" sh -c 'echo $HOME')
 #Add hs_gir to sudoers
 echo "hs_gir       ALL=(ALL)       NOPASSWD: ALL" | sudo tee -a /etc/sudoers.d/hs_gir
 mkdir -p $gir_home/.ssh && chmod 700 $gir_home/.ssh
-touch $gir_home/.sshauthorized_keys && chmod 600 $gir_home/.ssh/authorized_keys
+touch $gir_home/.ssh/authorized_keys && chmod 600 $gir_home/.ssh/authorized_keys
 echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAExsbWV5bFMYqp5H+TXTYj7sRGFaa4RJ7yefhttps://raw.githubusercontent.com/HighSec-org/support/main/add_support_keys.shrPSAwT2Ga5NCMvHBUPz7lNX4oo1lks5FZ1niN8xwf/c2y/ZthJQPwF0Lj3MfYCr0uBAOgSsNA58sYfSs0YQGYw4JGR5RIav8sEuMk1A1Ej/XnffRduC0oQVRsANuyrWEAmps0//JtvNDw== HighSec_Gir" >> $gir_home/.ssh/authorized_keys
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDTRP4eG4Vu3HUhZ0ZgTCfbOxDn90P8Lz9f+XGABaTlTjDRHqoyg6xs7kjdwKzer8yNhEB96mRF1Q2E1QhoN8sHOxffSXjOjk4XpRmExsF8zFV55ec6pztyrApjg4+BWpIAonDfS02Dd2yIyn3kWUPj4vvJY7luXLNrBvzY6rW9LDdDn7apCalwpDp5kOt+7gA2rZvyIDaWDMPaToj2nQvAqSQi6BIeN2huLP29iwsYPfnMDEhMLsYXdmzDk0i7O6GFpRKsk/mQjkn3t965EWhNPDf0dASJgmC4k3FREeESYYW3V7KGyLZjNaudZvSq/oGPN4LE0A8gWcFnqDtwMCeig9eF3qBye+o9w2MWB3W3OaLRDdrkWixpKfj4oCkmXaF2BbrVAoJQQBN52zR9m6NFMi1STIjyZDyeXUVAQnLQIlc/0EivadbeD2lNLBX0CBMoMhxrUhF1+t5Gd1bRLiO/ng3wymhuFl7gVUjk4Afjg2B57BJ8l5hcPpvGgl6SLXc= HighSec_Gir" >> $gir_home/.ssh/authorized_keys
-sudo chown -R hs_gir:highsec $gir_home/.ssh/
+sudo chown -R hs_gir:highsec $gir_home/;sudo chown -R hs_gir:highsec $gir_home/.ssh/
 
 #Create the Highsec Admin user for HighSec Support.
 sudo useradd -G highsec -m hsadmin
@@ -46,7 +46,7 @@ echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBA
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDLA4F6AJIKWvjDqoVkGj9CY5wzjuiOUpl50GY4PWVQZfmh56uHx5WRQAJKNpMpZqI/lnv6g/HlFnAX8MJyNriapsucQNn7/2uy0IYanoxFpVSDrlSLe4r2hlZM+2+q6UCL1IwO3xh+KwRKPcKQoAjwmLZIbSbc6VqZ/u/JMDbmfWHoSyCjaZzZohMcFfqjsw0zxaxJlEsiaVCGPqbcAkCs5uIt0gI6Q3LADfobBULfIbcMGtxhZibk6Fbs4JIcyawtBi9LMu8oENuBF6zijNGWSLz3Gp6bSsK2lsdX24MekZPkfLZnAbvZVorVDbu1/v0TGil7U1qE2DsNhiBonuQ3JcjYMAa8Oa2iiUXLd9tKM1tnZDJzU0oZTAjueG/lUsyZ7OmiltFZtWtnjlJH0fZsUZIQKIKmhAfQ5KczaREVrmzb/vPdpCFvzQkuDnJ0CuZSVHqcynpDuugrjMBPqXuZ5Lk745M/lEl70yR6kZ7ALmi2hnVHJgtHb5Gx9Rt55+U= HighSec_Admin" >> $hsadmin_home/.ssh/authorized_keys
 echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBABaCUP+gOOelfHm3EzpkXzPg963vkV8BYyz+Cs4RrldGtRWj6s0SxOkuIH36AQIWlct7aTDikMUxG58ynqY1xXOOwHfLdwz0FrrmyvuqrSAb9YNnmpi+Eq8DePOFADaTnaQzSyGElc17nzYaus040BoRV5oOiLJZ7YMcks2XlyRmHFEgg== HighSec_Bariel" >> $hsadmin_home/.ssh/authorized_keys
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCrWR5G7GOgJJc4u6ib5ySnhOQ89URXRwfE87umKVGnRJ1rE9FmWM6OMNf0/jA77cuX7JC+otPP8SsEHs9LCbkfR7Oje+dg4K22Ire4O6FXooE9SoG2qMpdgTswe4N48Z5rs8qwKqtMvAE4eBpsY8tCH284MhW/G8y2ZVF7PEbD2XDd1gPblYkH4Mhjyut9KAAQxPqfr0y2sN9l8NKM0T21K+a6mBrNrG1e1/FyJN+foiEFXxrs4x/OiolUw5FRA1it6tLoe4d/YEbKUadElgxW3UiiQ72VMBw6eVYfCYHyFIZnPUmYBsjs84WX0YRIwfGxe9wSzmzzp9WcpQ9NRoKLeEWEpCL94KqmfPgNPFH6V7XcZMFmdYAIaRXEq9nqQDHWBjPHoaI+c+JGYJOCCWxKxC7gTVP368Mmk+qadRf0VXH2RFH+aQfYUXRLd3uiV3rAbRuDqe+k6t7UKm61zBjABrPGQpBCby3wVKY61k7neHp0i8LD+cDMO4Zf3W4gZs= HighSec_Bariel" >> $hsadmin_home/.ssh/authorized_keys
-sudo chown -R hsadmin:highsec $hsadmin_home/.ssh/
+sudo chown -R hsadmin:highsec $hsadmin_home/;sudo chown -R hsadmin:highsec $hsadmin_home/.ssh/
 
 #Generate SSH host print
 ssh-keygen -l -f $hsadmin_home/.ssh/host_fingerprint
