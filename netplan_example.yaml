@@ -1,11 +1,11 @@
-# This is an example netplan network config written by 'HighSec'
+p# This is an example netplan network config written by 'HighSec'
 network:
   version: 2
   ethernets:
     netplan-isp-interface:
       match:
         macaddress: 00:16:3e:0c:97:8a
-      set-name: netplan-isp
+      set-name: enp2s0
       dhcp4: false
       dhcp6: false
       accept-ra: false
