@@ -1,13 +1,23 @@
 # This is an example netplan network config written by 'HighSec'
 network:
-  renderer: networkd
+  version: 2
   ethernets:
-    ens33:
+    netplan-isp-interface:
+      match:
+        macaddress: 00:16:3e:0c:97:8a
+      set-name: netplan-isp
+      dhcp4: false
+      dhcp6: false
+      accept-ra: false
+      link-local: []
       addresses:
-        - 192.168.1.247/24
-      nameservers:
-        addresses: [4.2.2.2, 8.8.8.8]
+        - 172.16.0.1/24
       routes:
         - to: default
-          via: 192.168.1.1
-  version: 2
+          via: 172.16.0.254
+      nameservers:
+        search:
+          - netplanlab.local
+        addresses:
+          - 172.16.0.254
+          - 172.16.0.253
