@@ -292,7 +292,7 @@ Unordered list:
 + Or pluses
 
 #### Manual directory list:
-.
+
 ├─ README.md
 ├─ foo
 │ ├─ README.md
