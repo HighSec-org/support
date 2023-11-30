@@ -31,22 +31,20 @@ Content for the introduction...
 16. 1.[Horizontal Rule](#Horizontal_Rule)
 17. [Descriptions](#Descriptions)
 18. [Diagrams](#Diagrams)
-	1. [Flowcharts](###Flowchart)
-	2. [Subgraphs](###Subgraph)
-	3. [Sequence diagram](###Sequence_diagram)
-	4. [Gantt chart](###Gantt_chart)
-	5. [Class diagram](###Class_diagram)
-	6. [State diagram](###State_diagram)
-	7. [Pie chart](###Pie_chart)
-	8. [Bar chart](###Bar_chart_gantt)
-	9. [User Journey diagram](###User_Journey_diagram)
-	10. [C 4 diagram](###C_4_diagram)
+	1. [Flowcharts](##Flowchart)
+	2. [Subgraphs](##Subgraph)
+	3. [Sequence diagram](##Sequence_diagram)
+	4. [Gantt chart](##Gantt_chart)
+	5. [Class diagram](##Class_diagram)
+	6. [State diagram](##State_diagram)
+	7. [Pie chart](##Pie_chart)
+	8. [Bar chart](##Bar_chart_gantt)
+	9. [User Journey diagram](##User_Journey_diagram)
+	10. [C 4 diagram](##C_4_diagram)
 19. [Dialogue Markdown](#Dialogue Markdown)
 20. [Math](#Math)
 21. [Images](#Images)
 22. [Alignments](#Alignments)
-
-
 
 
 ## Basic_Formatting
@@ -1558,7 +1556,7 @@ graph TD;
 
 
 <!-- <Flowchart> -->
-### Flowchart
+## Flowchart
 [Flowchart <a href="https://mermaid-js.github.io/mermaid/#/flowchart">docs</a>]
 
 ```\mermaid
@@ -1581,7 +1579,7 @@ C -->|Two| E[Result 2]
 
 
 
-### Subgraph
+## Subgraph
 ````
 ```mermaid
 graph TB
@@ -1616,7 +1614,7 @@ graph TB
   SubGraph1 --> FinalThing[Final Thing]
 end
 ```
-### Sequence_diagram
+## Sequence_diagram
 [<a href="https://mermaid-js.github.io/mermaid/#/sequenceDiagram">Sequence Diagram docs</a> ]
 
 ```
@@ -1645,7 +1643,7 @@ Bob-->>John: Jolly good!
 
 
 
-### Gantt_chart
+## Gantt_chart
 [<a href="https://mermaid-js.github.io/mermaid/#/gantt">Gantt docs</a>]
 
 ```
@@ -1671,7 +1669,7 @@ gantt
 ```
 
 
-### Class_diagram
+## Class_diagram
 [<a href="https://mermaid-js.github.io/mermaid/#/classDiagram">Class Diagram docs</a>]
 
 ```
@@ -1714,7 +1712,7 @@ class Class10 {
 
 ```
 
-### State_diagram
+## State_diagram
 [<a href="https://mermaid-js.github.io/mermaid/#/stateDiagram">State Diagram docs</a>]
 
 ```
@@ -1737,7 +1735,7 @@ Moving --> Crash
 Crash --> [*]
 ```
 
-### Pie_chart
+## Pie_chart
 [<a href="https://mermaid-js.github.io/mermaid/#/pie">Pie Chart docs</a>]
 
 ```
@@ -1755,7 +1753,7 @@ pie
 ```
 
 
-### Bar_chart_gantt
+## Bar_chart_gantt
 [<a href="https://mermaid-js.github.io/mermaid/#/gantt">Bar Chart docs</a>]
 
 ```
@@ -1794,7 +1792,7 @@ gantt
     5    : 0, 5
 ```
 
-### User_Journey_diagram
+## User_Journey_diagram
 [<a href="https://mermaid-js.github.io/mermaid/#/user-journey">User Journey diagram docs</a> ]
 
 ```
@@ -1821,7 +1819,7 @@ gantt
       Sit down: 3: Me
 ```
 
-### C_4_diagram
+## C_4_diagram
 [<a href="https://mermaid-js.github.io/mermaid/#/c4c">C 4 Diagram docs</a>]
 
 ```
