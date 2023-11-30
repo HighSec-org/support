@@ -11,7 +11,7 @@ Content for the introduction...
 2. [Text styles](#Text_styles)
 	1. [Quote Blocks](##Blockquotes)
 	2. [Fenced Code blocks](##Fenced_code_blocks)
-	3. [Syntax Highlighting](##Code_Block_Syntax_Highlighting)
+	3. [Syntax Highlighting](###Code_Block_Syntax_Highlighting_Definitions)
 	4. [Collapsible items](##Collapsible_items)
 3. [Links](#Links)
 	1. [Glossary](##Glossary)
@@ -180,7 +180,7 @@ public static String monthNames[] = {"January", "February", "March", "April", "M
 public static String monthNames[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 ```
 
-### Code Block Syntax Highlighting Definitions
+### Code_Block_Syntax_Highlighting_Definitions
 Syntax highlighting for code blocks
 
 Imports code from [CodeMirror](https://github.com/codemirror/CodeMirror/)
