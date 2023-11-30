@@ -1,5 +1,53 @@
+## Introduction
+Content for the introduction...
 
 
+
+## Table of Contents
+
+[Headings](#Headings)
+[Text styles](#Text_styles)
+[Quote Blocks](#Blockquotes)
+	[Fenced Code blocks](##Fenced_code_blocks)
+	[Syntax Highlighting](###Code_Block_Syntax_Highlighting Definitions)
+	[Collapsible items](##Collapsible_items)
+[Links](#Links)
+	[Glossary](##Glossary)
+	[GitLab-specific references](## GitLab_specific_references)
+	[Citations](##Citations)
+	[Footnotes](##Footnotes)
+[Alerts Markdown](#Alerts_Markdown)
+[CriticMarkup](#CriticMarkup)
+[Miscellaneous Syntax](#Miscellaneous)
+	[YAML style syntax](##YAML_styles)
+[Buttons](#Buttons)
+[Lists](#Lists)
+	*[Multi Level List Example](##Multi_level_List_Example)	*
+	[Checklists](##Checklists)
+	[Markdown Tree](##Markdown_Tree)
+[Tables](#Tables)
+	[Table Markdown Extended](##Table_Markdown_Extended)
+***[Markdown Columns](#Markdown_Columns)***
+[Horizontal Rule](#Horizontal_Rule)
+[Descriptions](#Descriptions)
+[Diagrams](#Diagrams)
+	[Flowcharts](###Flowchart)
+	[Subgraphs](###Subgraph)
+	[Sequence diagram](###Sequence_diagram)
+	[Gantt chart](###Gantt_chart)
+	[Class diagram](###Class_diagram)
+	[State diagram](###State_diagram)
+	[Pie chart](###Pie_chart)
+	[Bar chart](###Bar_chart_gantt)
+	[User Journey diagram](###User_Journey_diagram)
+	[C 4 diagram](###C_4_diagram)
+[Dialogue Markdown](#Dialogue Markdown)
+[Math](#Math)
+[Images](#Images)
+[Alignments](#Alignments)
+
+
+## Basic_Formatting
 ____
 # Headings
 
@@ -31,13 +79,10 @@ ____
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 
-Heading 1
-=
-Heading 2
--
 
+Scroll to [Top](#introduction)
 ____
-## Text styles
+# Text_styles
 
 You can indicate emphasis with bold, italic, strikethrough, subscript, or superscript text in comment fields and `.md` files.
 
@@ -59,8 +104,9 @@ Boxed
 ###### Boxed
 <table><tr><td>The quick brown fox jumps over the lazy dog.</td></tr></table>
 
+Scroll to [Top](#introduction)
 ____
-### Blockquotes
+# Blockquotes
 
 ```
 > The quick brown fox jumps over the lazy dog.
@@ -90,8 +136,9 @@ ____
 > **The quick brown fox** *jumps over the lazy dog.*
 
 
+Scroll to [Top](#introduction)
 ____
-## Fenced code blocks
+## Fenced_code_blocks
 
 You can create fenced code blocks by placing triple backticks ` ``` ` before and after the code block. We recommend placing a blank line before and after code blocks to make the raw formatting easier to read.
 
@@ -121,7 +168,7 @@ Without backticks
 ```
 
 
-# Syntax Highlighting for Code blocks
+### Syntax Highlighting for Code blocks
 A class method is an instance method of the class object. When a new class is created, an object of type `Class` is initialized and assigned to a global constant (Mobile in this case).
 ```
 public static String monthNames[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
@@ -131,7 +178,7 @@ public static String monthNames[] = {"January", "February", "March", "April", "M
 public static String monthNames[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 ```
 
-# Syntax Highlighting  Definitions
+### Code Block Syntax Highlighting Definitions
 Syntax highlighting for code blocks
 
 Imports code from [CodeMirror](https://github.com/codemirror/CodeMirror/)
@@ -139,12 +186,319 @@ Supported syntax types:
 actionscript3, apache, applescript, asp, brainfuck, c, cfm, cjs, clojure, cmake, coffee-script, coffeescript, coffee, cpp - C++, cs ,csharp, css, csv, bash, sh, zsh, diff, elixir, erb - HTML + Embedded Ruby, go, haml, http, java, javascript, js, json, jsx, less, lolcode, make - Makefile, markdown, matlab, nginx, objectivec, pascal, PHP, Perl, python, profile - python profiler output, rust, salt, saltstate - Salt, shell, sh, zsh, bash - Shell scripting, scss, sql, svg, swift, rb, jruby, ruby, smalltalk,vim, viml - Vim Script, volt, vhdl, vue, xml - XML and also used for HTML with inline CSS and Javascript, yaml](<apl, asciiarmor, asn.1, asterisk, clike, clojure, cmake, cobol, coffeescript, commonlisp, crystal, css, cypher, d, dart, diff, django, dockerfile, dtd, dylan, ebnf, ecl, eiffel, elm, erlang, factor, fcl, forth, fortran, gas, gfm, gherkin, go, groovy, haml, handlebars, haskell-literate, haskell, haxe, htmlembedded, htmlmixed, http, idl, javascript, jinja2, jsx, julia, livescript, lua, markdown, mathematica, mbox, mirc, mllike, modelica, mscgen, mumps, nginx, nsis, ntriples, octave, oz, pascal, pegjs, perl, php, pig, powershell, properties, protobuf, pug, puppet, python, q, r, rpm, rst, ruby, rust, sas, sass, scheme, shell, sieve, slim, smalltalk, smarty, solr, soy, sparql, spreadsheet, sql, stex, stylus, swift, tcl, textile, tiddlywiki, tiki, toml, tornado, troff, ttcn-cfg, ttcn, turtle, twig, vb, vbscript, velocity, verilog, vhdl, vue, wast, webidl, xml, xquery, yacas, yaml-frontmatter, yaml, z80
 
 non-codemirror based syntax highlighting:
-console, 
+console, mermaid
 
+Scroll to [Top](#introduction)
 
 ____
-## CriticMarkup
 
+## Collapsible_items
+
+```
+<details>
+  <summary>Markdown</summary>
+
+-  <kbd>[Markdown Editor](https://binarytree.dev/me)</kbd>
+-  <kbd>[Table Of Content](https://binarytree.dev/toc)</kbd>
+-  <kbd>[Markdown Table Generator](https://binarytree.dev/md_table_generator)</kbd>
+
+</details>
+```
+
+<details>
+  <summary>Markdown</summary>
+
+-  <kbd>[Markdown Editor](https://binarytree.dev/me)</kbd>
+-  <kbd>[Table Of Content](https://binarytree.dev/toc)</kbd>
+-  <kbd>[Markdown Table Generator](https://binarytree.dev/md_table_generator)</kbd>
+
+</details>
+
+
+You can temporarily obscure sections of your Markdown by creating a collapsed section that the reader can choose to expand. For example, when you want to include technical details in an issue comment that may not be relevant or interesting to every reader, you can put those details in a collapsed section.
+
+Any Markdown within the `<details>` block will be collapsed until the reader clicks
+
+to expand the details.
+
+Within the `<details>` block, use the `<summary>` tag to let readers know what is inside. The label appears to the right of
+
+````markdown
+<details>
+<summary>Tips for collapsed sections</summary>
+
+### You can add a header
+
+You can add text within a collapsed section. 
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+</details>
+````
+
+The Markdown inside the `<summary>` label will be collapsed by default:
+
+<details>
+<summary>Tips for collapsed sections</summary>
+
+### You can add a header
+You can add text within a collapsed section. 
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+</details>
+
+
+Scroll to [Top](#introduction)
+____
+# Links
+
+```
+[The-Ultimate-Markdown-Cheat-Sheet](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)
+```
+
+[The-Higsec Markdown Reference](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)
+
+```
+[The-Markdown-Reference-Sheet][reference text]
+
+[The-Markdown-Reference-Sheet][1]
+
+[Markdown-Reference-Sheet]
+
+[reference text]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
+[1]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
+[Markdown-Cheat-Sheet]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
+```
+
+[The-Markdown-Reference-Sheet][reference text]
+
+[The-Markdown-Reference-Sheet][1]
+
+[Markdown-Reference-Sheet]
+
+[reference text]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
+[1]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
+[Markdown Reference Sheet]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
+
+
+```
+[Example of a relative link](rl.md)
+```
+
+[Example of a relative link](rl.md)
+
+Scroll to [Top](#introduction)
+____
+
+## Glossary
+|Markdown|Result|
+|---|---|
+|<pre>Let's reference a glossary term. [^glossary]  <br>  <br>[^glossary]:glossary: Glossary     A section at the end ...</pre>|Let’s reference a glossary term.[[1]](https://rawgit.com/fletcher/human-markdown-reference/master/index.html#fn:4 "see footnote")<br><br>---<br><br>1. Glossary:<br>    <br>    A section at the end …  [↩](https://rawgit.com/fletcher/human-markdown-reference/master/index.html#fnref:4 "return to article")|
+
+Scroll to [Top](#introduction)
+____
+## GitLab_specific_references
+[Gitlab link reference docs](https://docs.gitlab.com/ee/user/markdown.html#gitlab-specific-references "Permalink")
+
+GitLab Flavored Markdown renders GitLab-specific references. For example, you can reference an issue, a commit, a team member, or even an entire project team. GitLab Flavored Markdown turns that reference into a link so you can navigate between them. All references to projects should use the **project slug** rather than the project name.
+
+Additionally, GitLab Flavored Markdown recognizes certain cross-project references and also has a shorthand version to reference other projects from the same namespace.
+
+GitLab Flavored Markdown recognizes the following:
+
+|references|input|cross-project reference|shortcut inside same namespace|
+|---|---|---|---|
+|specific user|`@user_name`|||
+|specific group|`@group_name`|||
+|entire team|[`@all`](https://docs.gitlab.com/ee/user/discussions/index.html#mentioning-all-members)|||
+|project|`namespace/project>`|||
+|issue|`#123`|`namespace/project#123`|`project#123`|
+|merge request|`!123`|`namespace/project!123`|`project!123`|
+|snippet|`$123`|`namespace/project$123`|`project$123`|
+|[epic](https://docs.gitlab.com/ee/user/group/epics/index.html)|`&123`|`group1/subgroup&123`||
+|[iteration](https://docs.gitlab.com/ee/user/group/iterations/index.html)|`*iteration:"iteration title"`|||
+|[vulnerability](https://docs.gitlab.com/ee/user/application_security/vulnerabilities/index.html) 1|`[vulnerability:123]`|`[vulnerability:namespace/project/123]`|`[vulnerability:project/123]`|
+|feature flag|`[feature_flag:123]`|`[feature_flag:namespace/project/123]`|`[feature_flag:project/123]`|
+|label by ID|`~123`|`namespace/project~123`|`project~123`|
+|one-word label by name|`~bug`|`namespace/project~bug`|`project~bug`|
+|multi-word label by name|`~"feature request"`|`namespace/project~"feature request"`|`project~"feature request"`|
+|scoped label by name|`~"priority::high"`|`namespace/project~"priority::high"`|`project~"priority::high"`|
+|project milestone by ID|`%123`|`namespace/project%123`|`project%123`|
+|one-word milestone by name|`%v1.23`|`namespace/project%v1.23`|`project%v1.23`|
+|multi-word milestone by name|`%"release candidate"`|`namespace/project%"release candidate"`|`project%"release candidate"`|
+|specific commit|`9ba12248`|`namespace/project@9ba12248`|`project@9ba12248`|
+|commit range comparison|`9ba12248...b19a04f5`|`namespace/project@9ba12248...b19a04f5`|`project@9ba12248...b19a04f5`|
+|repository file references|`[README](doc/README.md)`|||
+|repository file line references|`[README](doc/README.md#L13)`|||
+|[alert](https://docs.gitlab.com/ee/operations/incident_management/alerts.html)|`^alert#123`|`namespace/project^alert#123`|`project^alert#123`|
+|contact|`[contact:test@example.com]`|||
+
+
+Scroll to [Top](#introduction)
+____
+## Citations
+
+|Markdown|Result|
+|---|---|
+|<pre> Let's cite a fake book.[p. 42][#fake]  <br>  <br>[#fake]: John Doe. *A Totally Fake Book*. Vanity Press, 2006. </pre>|Let’s cite a fake book.[[p. 42, 1]](https://rawgit.com/fletcher/human-markdown-reference/master/index.html#fn:3 "Jump to citation")<br><br>---<br><br>1. John Doe. _A Totally Fake Book_. Vanity Press, 2006.|
+
+Scroll to [Top](#introduction)
+
+____
+## Footnotes
+
+````
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].  
+
+You can also use words, to fit your writing style more closely[^note].
+
+[^1]: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.  
+  This allows you to have a footnote with multiple lines.
+[^note]:
+    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+    This footnote also has been made with a different syntax using 4 spaces for new lines.
+````
+Renders as:
+
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].  
+
+You can also use words, to fit your writing style more closely[^note].
+
+[^1]: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.  
+  This allows you to have a footnote with multiple lines.
+[^note]:
+    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+    This footnote also has been made with a different syntax using 4 spaces for new lines.
+
+
+Scroll to [Top](#introduction)
+
+____
+# Alerts_Markdown
+
+Alerts are an extension of the blockquote syntax that you can use to emphasize critical information. On GitHub, they are displayed with distinctive colors and icons to indicate the importance of the content. 
+Alert syntax is supported in:
+- Issues, - Pull requestes, - Markdown files, - Discussions, - Gists, - Wikis, - Releases
+
+We recommend restricting the use of alerts to one or two per article to avoid overloading the reader. Consecutive alerts should be avoided.
+
+Multiple types of alerts are available. You can add an alert with a special blockquote line that specifies the alert type, and then add the alert information in a standard blockquote immediately after.
+
+
+```markdown
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+```
+
+Here are the rendered alerts.
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!info] 
+>  
+
+
+> [!todo] 
+>  
+
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!abstract] 
+> 
+
+> [!summary] 
+> 
+
+> [!tldr] 
+> 
+
+> [!tip] 
+> Optional information to help a user be more successful.
+
+> [!hint] 
+> 
+
+
+> [!success] 
+> 
+> [!check] 
+> 
+
+> [!done] 
+> 
+
+> [!question] 
+> 
+
+> [!help] 
+> 
+
+> [!faq] 
+> 
+
+> [!warning] 
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!caution] 
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!attention] 
+> 
+
+> [!failure] 
+> 
+
+> [!fail] 
+> 
+
+> [!missing] 
+> 
+
+> [!danger] 
+> 
+
+> [!error] 
+> 
+
+> [!bug] 
+> 
+
+> [!example] 
+> 
+
+> [!quote] 
+> 
+
+> [!glyph] 
+> 
+
+
+Scroll to [Top](#introduction)
+____
+## CriticMarkup
 There are five types of Critic marks: 
 
 * Addition `{++ ++}`
@@ -161,9 +515,194 @@ There are five types of Critic marks:
 |This is a {==test==}.|This is a ==test==.|
 |This is a test{>>What is it a test of?<<}.|This is a test.|
 
+
+Scroll to [Top](#introduction)
+
+____
+# Miscellaneous
+<!--
+Lorem ipsum dolor sit amet
+-->
+
+```
+
+
+{}  Curly braces
+.   Dot
+!   Exclamation mark
+#   Hash symbol
+-   Hyphen symbol
++   Plus symbol
+#   Hash tags for headines and anchor links
+@   at symbol for at mentions
+[]   for links, checked lists / tasks, and footnotes
+()   for links
+!   for images
+^   for footnote links
+x or X for tasks lists
+` and ``` for inline code and codeblocks respectively
+* and ** for italic and bold respectively
+_   underscore for italics
+~~   2 tildes for strikethrough
+|   for setting tables cells
+||   double pipes for spoiler text on Discord
+:   with dashes - for table cell alignments, for footnotes, and emojis
+* or - and a space for unordered lists
+1., 2., 3., etc. for numbered lists
+* and + for diff code blocks
+>   for blockquotes
+> > for indented / nested blockquotes
+3 - or * for horizontal rules
+
+<!-- for comments in markdown -->
+
+<!-- a `comment`
+   spanning multiple lines
+--> rest of paragraph
+
+{::comment}
+This text is a comment in the codet.
+{:/comment}
+
+\   to escape most of the characters above, as in...
+\*   escape asterisk,
+\|   escape pipe, etc...
+"   for titles in links and images
+
+```
+
+
+## Ignoring Markdown formatting
+You can ignore (or escape) Markdown formatting by using `\` before the Markdown character.
+Let's rename \*our-new-project\* to \*our-old-project\*.
+
+
+Scroll to [Top](#introduction)
+____
+## YAML_styles
+
+|   |   |
+|---|---|
+|`{null}`|Null (no value).|
+|`[1234, 0x4D2, 02333]`|[Decimal int, Hexadecimal int, Octal int]|
+|`[1_230.15, 12.3015e+02]`|[Fixed float, Exponential float]|
+|`[.inf, -.Inf, .NAN]`|[Infinity (float), Negative, Not a number]|
+|`{Y, true, Yes, ON}`|Boolean true|
+|`{n, FALSE, No, off}`|Boolean false|
+
+```
+% 	Directive indicator
+& 	Anchor property
+<< 	Merge keys from another mapping
+
+1-9 	Explicit indentation modifier (|1 or >2).
+		Modifiers can be combined (|2-, >+1)
+
+!foo 	Primary (by convention, means a local !foo tag)
+!!foo 	Secondary (by convention, means tag:yaml.org,2002:foo)
+!h!foo 	Requires %TAG !h! <prefix> (and then means <prefix>foo)
+!<foo> 	Verbatim tag (always means foo)
+!!set 	{cherries, plums, apples}
+!!omap 	[one: 1, two: 2]
+!!map 	{Hash table, dictionary, mapping}
+!!seq 	{List, array, tuple, vector, sequence}
+!!str 	Unicode string
+{:#term1} First term
+{:#term2} Second term
+{:#term3="defined"} Term with Definition
+: {:.cls} Definition
+``` 
+
+
+Nested hash
+```
+ my_hash:
+   subkey:
+     subsubkey1: 5
+     subsubkey2: 6
+   another:
+     somethingelse: 'Important!'
+```
+
+**YAML nested array of objects**:
+```yaml
+---
+- id: 1
+  name: Franc
+  roles:
+  - admin
+  - hr
+- id: 2
+  name: John
+  roles:
+  - admin
+  - finance
+```
+
+Nested Collection
+```
+Jack:
+  id: 1
+  name: Franc
+  salary: 25000
+  hobby:
+    - a
+    - b
+  location: {country: "A", city: "A-A"}
+```
+
+- hierarchical structure vs non-hierarchical structure
+```yaml
+profile:
+    qa:
+        url: http://qa.com
+        database: appqa
+    prod:
+        url: http://prod.com
+        database: appprod
+
+```
+
+The same can be configured in the properties file with a flat structure.
+```markup
+profile.qa.url=http://qa.com
+profile.qa.database=appqa
+profile.prod.url=http://prod.com
+profile.prod.url=appprod
+```
+
+
+Scroll to [Top](#introduction)
+____
+
+# Buttons
+```
+<kbd>cmd + shift + p</kbd>
+```
+
+<kbd>cmd + shift + p</kbd>
+
+```
+<kbd> <br> cmd + shift + p <br> </kbd>
+```
+
+<kbd> <br> cmd + shift + p <br> </kbd>
+
+```
+<kbd>[Markdown-Reference](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)</kbd>
+```
+
+<kbd>[Markdown-Reference](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)</kbd>
+
+```
+[<kbd>Markdown-Reference</kbd>](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)
+```
+
+[<kbd>Markdown-Reference</kbd>](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)
+
+Scroll to [Top](#introduction)
 ____
 # Lists
-
 
 ```
 1. First level
@@ -209,7 +748,7 @@ ____
         1. This is a nested
         2. List of items
 
-## Multi level List Example
+## Multi_level_List_Example
 ``` 
 1. First ordered list item
 2. Another item
@@ -291,21 +830,11 @@ Unordered list:
 - Or minuses
 + Or pluses
 
-#### Manual directory list:
 
-├─ README.md
-├─ foo
-│ ├─ README.md
-│ ├─ one.md
-│ └─ two.md
-└─ bar
-├─ README.md
-├─ three.md
-└─ four.md
-
+Scroll to [Top](#introduction)
 
 ____
-### Checklists
+## Checklists
 You can create what looks like checkboxes and display completed tasks with a checkmark. It takes the form of an unordered list with the first characters being a set of square brackets which **_MUST_** have a space in them. For a completed task, add either a lower or uppercase "X":
 
 - [ ]  Incomplete _task_
@@ -320,7 +849,57 @@ You can create what looks like checkboxes and display completed tasks with a che
   - [x] Completed subtask
 ```
 
+Scroll to [Top](#introduction)
 ____
+## Markdown_Tree
+
+To create directory trees with a more visually appealing format using the Markdown Tree plugin, follow these steps:
+1. Start with the root directory.
+2. Use indentation with spaces or tabs to represent nested directories.
+3. Place files directly under their respective directories.
+
+## Markdown Tree Example
+Consider the following directory structure:
+```
+root
+    second
+        third
+            fourth
+                file1.jpg
+                file2.txt
+                file3.pdf
+```
+
+To transform this structure into a prettier directory tree using the **Markdown Tree** plugin, use the following input:
+````
+```markdown-tree
+root
+    second
+        third
+            fourth
+                file1.jpg
+                file2.txt
+                file3.pdf
+````
+
+When rendered the output will be:
+```plaintext
+.
+└── root
+    └── second
+        └── third
+            └── fourth
+                ├── file1.jpg
+                ├── file2.txt
+                └── file3.pdf
+```
+
+Credits to [https://gitlab.com/nfriend](https://gitlab.com/nfriend) for making the most used directory plugin online in [https://tree.nathanfriend.io/](https://tree.nathanfriend.io/)
+
+
+Scroll to [Top](#introduction)
+____
+
 # Tables
 
 ```
@@ -438,853 +1017,192 @@ Default    | Left align | Center align | Right align
 |---|---|---|
 | 1 | 2 | 3 <br/> 4 <br/> 5 |
 
+Scroll to [Top](#introduction)
 ____
 
-____
-
-____
-
-# Collapsible items
-
-```
-<details>
-  <summary>Markdown</summary>
-
--  <kbd>[Markdown Editor](https://binarytree.dev/me)</kbd>
--  <kbd>[Table Of Content](https://binarytree.dev/toc)</kbd>
--  <kbd>[Markdown Table Generator](https://binarytree.dev/md_table_generator)</kbd>
-
-</details>
-```
-
-<details>
-  <summary>Markdown</summary>
-
--  <kbd>[Markdown Editor](https://binarytree.dev/me)</kbd>
--  <kbd>[Table Of Content](https://binarytree.dev/toc)</kbd>
--  <kbd>[Markdown Table Generator](https://binarytree.dev/md_table_generator)</kbd>
-
-</details>
-
-
-You can temporarily obscure sections of your Markdown by creating a collapsed section that the reader can choose to expand. For example, when you want to include technical details in an issue comment that may not be relevant or interesting to every reader, you can put those details in a collapsed section.
-
-Any Markdown within the `<details>` block will be collapsed until the reader clicks
-
-to expand the details.
-
-Within the `<details>` block, use the `<summary>` tag to let readers know what is inside. The label appears to the right of
-
-````markdown
-<details>
-<summary>Tips for collapsed sections</summary>
-
-### You can add a header
-
-You can add text within a collapsed section. 
-
-You can add an image or a code block, too.
-
-```ruby
-   puts "Hello World"
-```
-
-</details>
-````
-
-The Markdown inside the `<summary>` label will be collapsed by default:
-
-<details>
-<summary>Tips for collapsed sections</summary>
-
-### You can add a header
-You can add text within a collapsed section. 
-
-You can add an image or a code block, too.
-
-```ruby
-   puts "Hello World"
-```
-
-</details>
-
-
-____
-
-# Horizontal Rule
-
-```
-Three or more...
-
----
-
-Hyphens
-
-***
-
-Asterisks
-
-___
-
-Underscores
-```
-
-***
-
-____
-
-# Buttons
-```
-<kbd>cmd + shift + p</kbd>
-```
-
-<kbd>cmd + shift + p</kbd>
-
-```
-<kbd> <br> cmd + shift + p <br> </kbd>
-```
-
-<kbd> <br> cmd + shift + p <br> </kbd>
-
-```
-<kbd>[Markdown-Reference](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)</kbd>
-```
-
-<kbd>[Markdown-Reference](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)</kbd>
-
-```
-[<kbd>Markdown-Reference</kbd>](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)
-```
-
-[<kbd>Markdown-Reference</kbd>](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)
-____
-
-# Miscellaneous
-<!--
-Lorem ipsum dolor sit amet
--->
-
-```
-
-
-{}  Curly braces
-.   Dot
-!   Exclamation mark
-#   Hash symbol
--   Hyphen symbol
-+   Plus symbol
-#   Hash tags for headines and anchor links
-@   at symbol for at mentions
-[]   for links, checked lists / tasks, and footnotes
-()   for links
-!   for images
-^   for footnote links
-x or X for tasks lists
-` and ``` for inline code and codeblocks respectively
-* and ** for italic and bold respectively
-_   underscore for italics
-~~   2 tildes for strikethrough
-|   for setting tables cells
-||   double pipes for spoiler text on Discord
-:   with dashes - for table cell alignments, for footnotes, and emojis
-* or - and a space for unordered lists
-1., 2., 3., etc. for numbered lists
-* and + for diff code blocks
->   for blockquotes
-> > for indented / nested blockquotes
-3 - or * for horizontal rules
-
-<!-- for comments in markdown -->
-
-<!-- a `comment`
-   spanning multiple lines
---> rest of paragraph
-
-{::comment}
-This text is a comment in the codet.
-{:/comment}
-
-\   to escape most of the characters above, as in...
-\*   escape asterisk,
-\|   escape pipe, etc...
-"   for titles in links and images
-
-```
-
-
-## Ignoring Markdown formatting
-You can ignore (or escape) Markdown formatting by using `\` before the Markdown character.
-Let's rename \*our-new-project\* to \*our-old-project\*.
-
-
-# YAML style imports
-
-|   |   |
-|---|---|
-|`{null}`|Null (no value).|
-|`[1234, 0x4D2, 02333]`|[Decimal int, Hexadecimal int, Octal int]|
-|`[1_230.15, 12.3015e+02]`|[Fixed float, Exponential float]|
-|`[.inf, -.Inf, .NAN]`|[Infinity (float), Negative, Not a number]|
-|`{Y, true, Yes, ON}`|Boolean true|
-|`{n, FALSE, No, off}`|Boolean false|
-
-```
-% 	Directive indicator
-& 	Anchor property
-<< 	Merge keys from another mapping
-
-1-9 	Explicit indentation modifier (|1 or >2).
-		Modifiers can be combined (|2-, >+1)
-
-!foo 	Primary (by convention, means a local !foo tag)
-!!foo 	Secondary (by convention, means tag:yaml.org,2002:foo)
-!h!foo 	Requires %TAG !h! <prefix> (and then means <prefix>foo)
-!<foo> 	Verbatim tag (always means foo)
-!!set 	{cherries, plums, apples}
-!!omap 	[one: 1, two: 2]
-!!map 	{Hash table, dictionary, mapping}
-!!seq 	{List, array, tuple, vector, sequence}
-!!str 	Unicode string
-{:#term1} First term
-{:#term2} Second term
-{:#term3="defined"} Term with Definition
-: {:.cls} Definition
-``` 
-
-
-Nested hash
-```
- my_hash:
-   subkey:
-     subsubkey1: 5
-     subsubkey2: 6
-   another:
-     somethingelse: 'Important!'
-```
-
-**YAML nested array of objects**:
-```yaml
----
-- id: 1
-  name: Franc
-  roles:
-  - admin
-  - hr
-- id: 2
-  name: John
-  roles:
-  - admin
-  - finance
-```
-
-Nested Collection
-```
-Jack:
-  id: 1
-  name: Franc
-  salary: 25000
-  hobby:
-    - a
-    - b
-  location: {country: "A", city: "A-A"}
-```
-
-- hierarchical structure vs non-hierarchical structure
-```yaml
-profile:
-    qa:
-        url: http://qa.com
-        database: appqa
-    prod:
-        url: http://prod.com
-        database: appprod
-
-```
-
-The same can be configured in the properties file with a flat structure.
-```markup
-profile.qa.url=http://qa.com
-profile.qa.database=appqa
-profile.prod.url=http://prod.com
-profile.prod.url=appprod
-```
-
-
-
-____
-#   Hash symbol
--   Hyphen symbol
-+   Plus symbol
-[]  Square brackets
-_   Underscore
-
-
-```
-\*   Asterisk
-\\   Backslash
-\`   Backtick
-\{}  Curly braces
-\.   Dot
-\!   Exclamation mark
-\#   Hash symbol
-\-   Hyphen symbol
-\()  Parentheses
-\+   Plus symbol
-\[]  Square brackets
-\_   Underscore
-```
-
-
----
-
-
----
-
-
----
-
-## Descriptions
-
-The following are HTML tags, **_NOT_** a part of markdown, but they do give you a nice indentation for visual variety.
-
-The text in the tags can only be styled with the HTML tags related to bold, italic, strikethrough, or _underline_. As you can see, I used the `ins`, `b`, `em`, and `s` tags in the example below:
-
-- `dl`: description list, the wrapper element for the other two
-- `dt`: description term, that which you are defining or highlighting
-- `dd`: description details, the actual definition or explanantion
-
-Description List
-
-Represents a description list. The **_dl_** element encloses a list of groups of terms (specified using the **_dt_** element) and descriptions (provided by **_dd_** elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs) (~~ignore~~).
+## Table_Markdown_Extended
+Extend basic table in Obsidian with MultiMarkdown table syntax.
+
+![image](https://user-images.githubusercontent.com/31102694/123046427-ad89b780-d42e-11eb-9588-b7028954bcfc.png)
+
+## Intro
+Markdowns' [built-in table syntax] can only define the basics for tables. When users try to apply complex tables with `colspan` or multiple headers, their only option is to fall back to raw HTML, which is difficult to read and edit.
+
+ [MultiMarkdown table syntax](https://fletcher.github.io/MultiMarkdown-6/syntax/tables.html)  provides the following features with internal links and embeds intact:
+- [Cell spans over columns](app://obsidian.md/index.html#colspan)
+- [Cell spans over rows](app://obsidian.md/index.html#rowspan)
+- [Block-level elements](app://obsidian.md/index.html#multiline) such as lists, codes...
+- [Multiple table headers](app://obsidian.md/index.html#multiline-header)
+- Table caption
+- [Omitted table header](app://obsidian.md/index.html#headerless)
+
+## Known issue
+- This plugin is not yet compatible with [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian), as its auto-formatting would break the mmd6 table syntax.
+    - Related issue: [advanced-tables-obsidian #59](https://github.com/tgrosinger/advanced-tables-obsidian/issues/59#issuecomment-812886995)
+- table with `-tx-` may sometimes ignore escape characters, for example, `\|` fails to escape `|` in table, only `\\|` works
+- extended native syntax may not work sometimes, with console output: `failed to get Markdown text, escaping...`
+
+## How to use
+The latest version use a new syntax to indicate extended tables in favor of fenced `tx` code blocks, which allow better support for backlinks and forward links, which use a leading `-tx-` before table:
+
+PS: For expermental extended native syntax support which eliminate the need for `-tx-` prefix, check [here](app://obsidian.md/index.html#expermental-extended-native-syntax)
 
 ```md
-<dl>
-  <dt>Description <ins>List</ins></dt>
-  <dd>Represents a description list. The <ins><b><em>dl</em></b></ins> element encloses a list of groups of terms (specified using the <ins><b><em>dt</em></b></ins> element) and descriptions (provided by <ins><b><em>dd</em></b></ins> elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs) (<s>ignore</s>).</dd>
-</dl>
+
+-tx-
+|             |          Grouping           || 
+First Header  | Second Header | Third Header | 
+ ------------ | :-----------: | -----------: | 
+Content       |          *Long Cell*        || 
+Content       |   **Cell**    |         Cell | 
+New section   |     More      |         Data | 
+And more      | With an escaped '\|'       || 
+[Prototype table]
+
 ```
 
-____
-## Alerts Markdown
+would be render as:
 
-Alerts are an extension of the blockquote syntax that you can use to emphasize critical information. On GitHub, they are displayed with distinctive colors and icons to indicate the importance of the content. 
-Alert syntax is supported in:
-- Issues, - Pull requestes, - Markdown files, - Discussions, - Gists, - Wikis, - Releases
+Prototype table
+||Grouping|   |
+|---|---|---|
+|First Header|Second Header|Third Header|
+|---|---|---|
+|Content|_Long Cell_|   |
+|Content|**Cell**|Cell|
+|New section|More|Data|
+|And more|With an escaped '\|'|   |
 
-We recommend restricting the use of alerts to one or two per article to avoid overloading the reader. Consecutive alerts should be avoided.
+For more detailed guide, check [markdown-it-multimd-table README](https://github.com/RedBug312/markdown-it-multimd-table/blob/master/README.md#usage) and [MultiMarkdown User's Guide](https://fletcher.github.io/MultiMarkdown-6/syntax/tables.html)
 
-Multiple types of alerts are available. You can add an alert with a special blockquote line that specifies the alert type, and then add the alert information in a standard blockquote immediately after.
+### Expermental: Extended Native Syntax
+Note: the following features are not supported:
+- [Multiple table headers](app://obsidian.md/index.html#multiline-header)
+- Table caption
+- [Omitted table header](app://obsidian.md/index.html#headerless)
 
+Extended syntax is allowed in Obsidian's regular tables when option is enabled is the setting tab:
+
+The following table:
+```md
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+New section   |     More      |         Data |
+And more      | With an escaped '\|'       ||
+```
+
+would be render as:
+
+|First Header|Second Header|Third Header|
+|---|---|---|
+|Content|_Long Cell_|   |
+|Content|**Cell**|Cell|
+|New section|More|Data|
+|And more|With an escaped '\|'|   |
+
+### Multiline
+Backslash at end merges with line content below.
 
 ```markdown
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
-
-> [!IMPORTANT]
-> Crucial information necessary for users to succeed.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
+|   Markdown   | Rendered HTML |
+|--------------|---------------|
+|    *Italic*  | *Italic*      | \
+|              |               |
+|    - Item 1  | - Item 1      | \
+|    - Item 2  | - Item 2      |
+|    ```python | ```python       \
+|    .1 + .2   | .1 + .2         \
+|    ```       | ```           |
 ```
 
-Here are the rendered alerts.
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
+This is parsed below:
 
-> [!info] 
->  
+|Markdown|Rendered HTML|
+|---|---|
+|```<br>*Italic*<br>```|_Italic_|
+|```<br>- Item 1<br>- Item 2<br>```|- Item 1<br>- Item 2|
+|````<br>```python<br>.1 + .2<br>```<br>````|```python<br>.1 + .2<br>```|
 
+### Rowspan
+`^^` indicates cells being merged above.  
+```markdown
+Stage | Direct Products | ATP Yields
+----: | --------------: | ---------:
+Glycolysis | 2 ATP ||
+^^ | 2 NADH | 3--5 ATP |
+Pyruvaye oxidation | 2 NADH | 5 ATP |
+Citric acid cycle | 2 ATP ||
+^^ | 6 NADH | 15 ATP |
+^^ | 2 FADH2 | 3 ATP |
+**30--32** ATP |||
+```
 
-> [!todo] 
->  
+This is parsed below:
 
+|Stage|Direct Products|ATP Yields|
+|--:|--:|--:|
+|Glycolysis|2 ATP|   |
+|2 NADH|3–5 ATP|
+|Pyruvaye oxidation|2 NADH|5 ATP|
+|Citric acid cycle|2 ATP|   |
+|6 NADH|15 ATP|
+|2 FADH2|3 ATP|
+|**30–32** ATP|   |   |
 
-> [!IMPORTANT]
-> Crucial information necessary for users to succeed.
+### Multiline Header
+```tx
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+```
 
-> [!abstract] 
-> 
+rendered as:
 
-> [!summary] 
-> 
+||Grouping|   |
+|---|---|---|
+|First Header|Second Header|Third Header|
+|---|---|---|
+|Content|_Long Cell_|   |
 
-> [!tldr] 
-> 
+### Headerless
+Table header can be eliminated.
 
-> [!tip] 
-> Optional information to help a user be more successful.
+```markdown
+|--|--|--|--|--|--|--|--|
+|♜|  |♝|♛|♚|♝|♞|♜|
+|  |♟|♟|♟|  |♟|♟|♟|
+|♟|  |♞|  |  |  |  |  |
+|  |♗|  |  |♟|  |  |  |
+|  |  |  |  |♙|  |  |  |
+|  |  |  |  |  |♘|  |  |
+|♙|♙|♙|♙|  |♙|♙|♙|
+|♖|♘|♗|♕|♔|  |  |♖|
+```
 
-> [!hint] 
-> 
+This is parsed below:
 
+|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
+|♜||♝|♛|♚|♝|♞|♜|
+||♟|♟|♟||♟|♟|♟|
+|♟||♞||||||
+||♗|||♟||||
+|||||♙||||
+||||||♘|||
+|♙|♙|♙|♙||♙|♙|♙|
+|♖|♘|♗|♕|♔|||♖|
 
-> [!success] 
-> 
-> [!check] 
-> 
-
-> [!done] 
-> 
-
-> [!question] 
-> 
-
-> [!help] 
-> 
-
-> [!faq] 
-> 
-
-> [!warning] 
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!caution] 
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!attention] 
-> 
-
-> [!failure] 
-> 
-
-> [!fail] 
-> 
-
-> [!missing] 
-> 
-
-> [!danger] 
-> 
-
-> [!error] 
-> 
-
-> [!bug] 
-> 
-
-> [!example] 
-> 
-
-> [!quote] 
-> 
-
-> [!glyph] 
-> 
+## Behind the scene
+Due to the restriction of the current Obsidian API, the built-in markdown parser is not configurable. Instead, This plugin includes an standalone Markdown parser [markdown-it](https://markdown-it.github.io/) with plugin[markdown-it-multimd-table](https://github.com/RedBug312/markdown-it-multimd-table), and table sections and the texts inside code block with language tag `tx` are passed to `markdown-it`. The internal links and embeds, however, are extracted and passed to Obsidian, so the core features of obsidian remain intact.
 
 
+Scroll to [Top](#introduction)
 ____
 
-____
-
-____
-# Markdown Tree
-
-To create directory trees with a more visually appealing format using the Markdown Tree plugin, follow these steps:
-1. Start with the root directory.
-2. Use indentation with spaces or tabs to represent nested directories.
-3. Place files directly under their respective directories.
-
-## Example
-Consider the following directory structure:
-```
-root
-    second
-        third
-            fourth
-                file1.jpg
-                file2.txt
-                file3.pdf
-```
-
-To transform this structure into a prettier directory tree using the **Markdown Tree** plugin, use the following input:
-````
-```markdown-tree
-root
-    second
-        third
-            fourth
-                file1.jpg
-                file2.txt
-                file3.pdf
-````
-
-When rendered the output will be:
-```plaintext
-.
-└── root
-    └── second
-        └── third
-            └── fourth
-                ├── file1.jpg
-                ├── file2.txt
-                └── file3.pdf
-```
-
-Credits to [https://gitlab.com/nfriend](https://gitlab.com/nfriend) for making the most used directory plugin online in [https://tree.nathanfriend.io/](https://tree.nathanfriend.io/)
-
-
-____
-## Creating  diagrams
-
-Mermaid is a Markdown-inspired tool that renders text into diagrams. For example, Mermaid can render flow charts, sequence diagrams, pie charts and more. For more information, see the [Mermaid documentation](https://mermaid-js.github.io/mermaid/#/).
-To create a Mermaid diagram, add Mermaid syntax inside a fenced code block with the `mermaid` language identifier. For more information about creating code blocks, see "[Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)."
-For example, you can create a flow chart by specifying values and arrows.
-
-````
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-````
-
-Here is a simple flow chart:
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-
-**Note:** You may observe errors if you run a third-party Mermaid plugin when using Mermaid syntax on GitHub.
-
-
-
-<!-- <Flowchart> -->
-### Flowchart [<a href="https://mermaid-js.github.io/mermaid/#/flowchart">docs</a>]
-
-```
-flowchart LR
-
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-flowchart LR
-
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-
-
-## Subgraph
-````
-```mermaid
-graph TB
-
-  SubGraph1 --> SubGraph1Flow
-  subgraph "SubGraph 1 Flow"
-  SubGraph1Flow(SubNode 1)
-  SubGraph1Flow -- Choice1 --> DoChoice1
-  SubGraph1Flow -- Choice2 --> DoChoice2
-  end
-
-  subgraph "Main Graph"
-  Node1[Node 1] --> Node2[Node 2]
-  Node2 --> SubGraph1[Jump to SubGraph1]
-  SubGraph1 --> FinalThing[Final Thing]
-end
-```
-````
-```mermaid
-graph TB
-
-  SubGraph1 --> SubGraph1Flow
-  subgraph "SubGraph 1 Flow"
-  SubGraph1Flow(SubNode 1)
-  SubGraph1Flow -- Choice1 --> DoChoice1
-  SubGraph1Flow -- Choice2 --> DoChoice2
-  end
-
-  subgraph "Main Graph"
-  Node1[Node 1] --> Node2[Node 2]
-  Node2 --> SubGraph1[Jump to SubGraph1]
-  SubGraph1 --> FinalThing[Final Thing]
-end
-```
-### Sequence diagram [<a href="https://mermaid-js.github.io/mermaid/#/sequenceDiagram">docs</a> ]
-
-```
-sequenceDiagram
-Alice->>John: Hello John, how are you?
-loop Healthcheck
-    John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
-```
-
-```mermaid
-sequenceDiagram
-Alice->>John: Hello John, how are you?
-loop Healthcheck
-    John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
-```
-
-
-
-### Gantt chart [<a href="https://mermaid-js.github.io/mermaid/#/gantt">docs</a>]
-
-```
-gantt
-    section Section
-    Completed :done,    des1, 2014-01-06,2014-01-08
-    Active        :active,  des2, 2014-01-07, 3d
-    Parallel 1   :         des3, after des1, 1d
-    Parallel 2   :         des4, after des1, 1d
-    Parallel 3   :         des5, after des3, 1d
-    Parallel 4   :         des6, after des4, 1d
-```
-
-```mermaid
-gantt
-    section Section
-    Completed :done,    des1, 2014-01-06,2014-01-08
-    Active        :active,  des2, 2014-01-07, 3d
-    Parallel 1   :         des3, after des1, 1d
-    Parallel 2   :         des4, after des1, 1d
-    Parallel 3   :         des5, after des3, 1d
-    Parallel 4   :         des6, after des4, 1d
-```
-
-
-### Class diagram [<a href="https://mermaid-js.github.io/mermaid/#/classDiagram">docs</a>]
-
-```
-classDiagram
-Class01 <|-- AveryLongClass : Cool
-<<Interface>> Class01
-Class09 --> C2 : Where am I?
-Class09 --* C3
-Class09 --|> Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-class Class10 {
-  <<service>>
-  int id
-  size()
-}
-
-```
-
-```mermaid
-classDiagram
-Class01 <|-- AveryLongClass : Cool
-<<Interface>> Class01
-Class09 --> C2 : Where am I?
-Class09 --* C3
-Class09 --|> Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-class Class10 {
-  <<service>>
-  int id
-  size()
-}
-
-```
-
-### State diagram [<a href="https://mermaid-js.github.io/mermaid/#/stateDiagram">docs</a>]
-
-```
-stateDiagram-v2
-[*] --> Still
-Still --> [*]
-Still --> Moving
-Moving --> Still
-Moving --> Crash
-Crash --> [*]
-```
-
-```mermaid
-stateDiagram-v2
-[*] --> Still
-Still --> [*]
-Still --> Moving
-Moving --> Still
-Moving --> Crash
-Crash --> [*]
-```
-
-### Pie chart [<a href="https://mermaid-js.github.io/mermaid/#/pie">docs</a>]
-
-```
-pie
-"Dogs" : 386
-"Cats" : 85.9
-"Rats" : 15
-```
-
-```mermaid
-pie
-"Dogs" : 386
-"Cats" : 85.9
-"Rats" : 15
-```
-
-
-### Bar chart (using gantt chart) [<a href="https://mermaid-js.github.io/mermaid/#/gantt">docs</a>]
-
-```
-gantt
-    title Git Issues - days since last update
-    dateFormat  X
-    axisFormat %s
-
-    section Issue19062
-    71   : 0, 71
-    section Issue19401
-    36   : 0, 36
-    section Issue193
-    34   : 0, 34
-    section Issue7441
-    9    : 0, 9
-    section Issue1300
-    5    : 0, 5
-```
-
-```mermaid
-gantt
-    title Git Issues - days since last update
-    dateFormat  X
-    axisFormat %s
-
-    section Issue19062
-    71   : 0, 71
-    section Issue19401
-    36   : 0, 36
-    section Issue193
-    34   : 0, 34
-    section Issue7441
-    9    : 0, 9
-    section Issue1300
-    5    : 0, 5
-```
-
-### User Journey diagram [<a href="https://mermaid-js.github.io/mermaid/#/user-journey">docs</a> ]
-
-```
-  journey
-    title My working day
-    section Go to work
-      Make tea: 5: Me
-      Go upstairs: 3: Me
-      Do work: 1: Me, Cat
-    section Go home
-      Go downstairs: 5: Me
-      Sit down: 3: Me
-```
-
-```mermaid
-  journey
-    title My working day
-    section Go to work
-      Make tea: 5: Me
-      Go upstairs: 3: Me
-      Do work: 1: Me, Cat
-    section Go home
-      Go downstairs: 5: Me
-      Sit down: 3: Me
-```
-
-### C4 diagram [<a href="https://mermaid-js.github.io/mermaid/#/c4c">docs</a>]
-
-```
-C4Context
-title System Context diagram for Internet Banking System
-
-Person(customerA, "Banking Customer A", "A customer of the bank, with personal bank accounts.")
-Person(customerB, "Banking Customer B")
-Person_Ext(customerC, "Banking Customer C")
-System(SystemAA, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.")
-
-Person(customerD, "Banking Customer D", "A customer of the bank, <br/> with personal bank accounts.")
-
-Enterprise_Boundary(b1, "BankBoundary") {
-
-  SystemDb_Ext(SystemE, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
-
-  System_Boundary(b2, "BankBoundary2") {
-    System(SystemA, "Banking System A")
-    System(SystemB, "Banking System B", "A system of the bank, with personal bank accounts.")
-  }
-
-  System_Ext(SystemC, "E-mail system", "The internal Microsoft Exchange e-mail system.")
-  SystemDb(SystemD, "Banking System D Database", "A system of the bank, with personal bank accounts.")
-
-  Boundary(b3, "BankBoundary3", "boundary") {
-    SystemQueue(SystemF, "Banking System F Queue", "A system of the bank, with personal bank accounts.")
-    SystemQueue_Ext(SystemG, "Banking System G Queue", "A system of the bank, with personal bank accounts.")
-  }
-}
-
-BiRel(customerA, SystemAA, "Uses")
-BiRel(SystemAA, SystemE, "Uses")
-Rel(SystemAA, SystemC, "Sends e-mails", "SMTP")
-Rel(SystemC, customerA, "Sends e-mails to")
-```
-
-```mermaid
-C4Context
-title System Context diagram for Internet Banking System
-
-Person(customerA, "Banking Customer A", "A customer of the bank, with personal bank accounts.")
-Person(customerB, "Banking Customer B")
-Person_Ext(customerC, "Banking Customer C")
-System(SystemAA, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.")
-
-Person(customerD, "Banking Customer D", "A customer of the bank, <br/> with personal bank accounts.")
-
-Enterprise_Boundary(b1, "BankBoundary") {
-
-  SystemDb_Ext(SystemE, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
-
-  System_Boundary(b2, "BankBoundary2") {
-    System(SystemA, "Banking System A")
-    System(SystemB, "Banking System B", "A system of the bank, with personal bank accounts.")
-  }
-
-  System_Ext(SystemC, "E-mail system", "The internal Microsoft Exchange e-mail system.")
-  SystemDb(SystemD, "Banking System D Database", "A system of the bank, with personal bank accounts.")
-
-  Boundary(b3, "BankBoundary3", "boundary") {
-    SystemQueue(SystemF, "Banking System F Queue", "A system of the bank, with personal bank accounts.")
-    SystemQueue_Ext(SystemG, "Banking System G Queue", "A system of the bank, with personal bank accounts.")
-  }
-}
-
-BiRel(customerA, SystemAA, "Uses")
-BiRel(SystemAA, SystemE, "Uses")
-Rel(SystemAA, SystemC, "Sends e-mails", "SMTP")
-Rel(SystemC, customerA, "Sends e-mails to")
-```
-
-____
-# Markdown Columns
+# Markdown_Columns
 Allows you to create columns
 - Callout Syntax (live-preview supported, less settings)
 - Codeblock Syntax (live-preview supported, all settings)
@@ -1554,192 +1472,431 @@ Technically, just sets the flex-basis attribute.
 This setting sets the default span value for a column if it is not explicitly specified. For the time being, col codeblocks have each column set to this value and cannot be changed.
 
 
+Scroll to [Top](#introduction)
+____
+
+# Horizontal_Rule
+
+```
+Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
+```
+
+Scroll to [Top](#introduction)
+***
+
+# Descriptions
+
+The following are HTML tags, **_NOT_** a part of markdown, but they do give you a nice indentation for visual variety.
+
+The text in the tags can only be styled with the HTML tags related to bold, italic, strikethrough, or _underline_. As you can see, I used the `ins`, `b`, `em`, and `s` tags in the example below:
+
+- `dl`: description list, the wrapper element for the other two
+- `dt`: description term, that which you are defining or highlighting
+- `dd`: description details, the actual definition or explanantion
+
+Description List
+
+Represents a description list. The **_dl_** element encloses a list of groups of terms (specified using the **_dt_** element) and descriptions (provided by **_dd_** elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs) (~~ignore~~).
+
+```md
+<dl>
+  <dt>Description <ins>List</ins></dt>
+  <dd>Represents a description list. The <ins><b><em>dl</em></b></ins> element encloses a list of groups of terms (specified using the <ins><b><em>dt</em></b></ins> element) and descriptions (provided by <ins><b><em>dd</em></b></ins> elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs) (<s>ignore</s>).</dd>
+</dl>
+```
+
+
+Scroll to [Top](#introduction)
+____
 
 ____
 
-
-# Table Markdown Extended
-Extend basic table in Obsidian with MultiMarkdown table syntax.
-
-![image](https://user-images.githubusercontent.com/31102694/123046427-ad89b780-d42e-11eb-9588-b7028954bcfc.png)
-
-## Intro
-Markdowns' [built-in table syntax] can only define the basics for tables. When users try to apply complex tables with `colspan` or multiple headers, their only option is to fall back to raw HTML, which is difficult to read and edit.
-
- [MultiMarkdown table syntax](https://fletcher.github.io/MultiMarkdown-6/syntax/tables.html)  provides the following features with internal links and embeds intact:
-- [Cell spans over columns](app://obsidian.md/index.html#colspan)
-- [Cell spans over rows](app://obsidian.md/index.html#rowspan)
-- [Block-level elements](app://obsidian.md/index.html#multiline) such as lists, codes...
-- [Multiple table headers](app://obsidian.md/index.html#multiline-header)
-- Table caption
-- [Omitted table header](app://obsidian.md/index.html#headerless)
-
-## Known issue
-- This plugin is not yet compatible with [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian), as its auto-formatting would break the mmd6 table syntax.
-    - Related issue: [advanced-tables-obsidian #59](https://github.com/tgrosinger/advanced-tables-obsidian/issues/59#issuecomment-812886995)
-- table with `-tx-` may sometimes ignore escape characters, for example, `\|` fails to escape `|` in table, only `\\|` works
-- extended native syntax may not work sometimes, with console output: `failed to get Markdown text, escaping...`
-
-## How to use
-The latest version use a new syntax to indicate extended tables in favor of fenced `tx` code blocks, which allow better support for backlinks and forward links, which use a leading `-tx-` before table:
-
-PS: For expermental extended native syntax support which eliminate the need for `-tx-` prefix, check [here](app://obsidian.md/index.html#expermental-extended-native-syntax)
-
-```md
-
--tx-
-|             |          Grouping           || 
-First Header  | Second Header | Third Header | 
- ------------ | :-----------: | -----------: | 
-Content       |          *Long Cell*        || 
-Content       |   **Cell**    |         Cell | 
-New section   |     More      |         Data | 
-And more      | With an escaped '\|'       || 
-[Prototype table]
-
-```
-
-would be render as:
-
-Prototype table
-||Grouping|   |
-|---|---|---|
-|First Header|Second Header|Third Header|
-|---|---|---|
-|Content|_Long Cell_|   |
-|Content|**Cell**|Cell|
-|New section|More|Data|
-|And more|With an escaped '\|'|   |
-
-For more detailed guide, check [markdown-it-multimd-table README](https://github.com/RedBug312/markdown-it-multimd-table/blob/master/README.md#usage) and [MultiMarkdown User's Guide](https://fletcher.github.io/MultiMarkdown-6/syntax/tables.html)
-
-### Expermental: Extended Native Syntax
-Note: the following features are not supported:
-- [Multiple table headers](app://obsidian.md/index.html#multiline-header)
-- Table caption
-- [Omitted table header](app://obsidian.md/index.html#headerless)
-
-Extended syntax is allowed in Obsidian's regular tables when option is enabled is the setting tab:
-
-The following table:
-```md
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
-New section   |     More      |         Data |
-And more      | With an escaped '\|'       ||
-```
-
-would be render as:
-
-|First Header|Second Header|Third Header|
-|---|---|---|
-|Content|_Long Cell_|   |
-|Content|**Cell**|Cell|
-|New section|More|Data|
-|And more|With an escaped '\|'|   |
-
-### Multiline
-Backslash at end merges with line content below.
-
-```markdown
-|   Markdown   | Rendered HTML |
-|--------------|---------------|
-|    *Italic*  | *Italic*      | \
-|              |               |
-|    - Item 1  | - Item 1      | \
-|    - Item 2  | - Item 2      |
-|    ```python | ```python       \
-|    .1 + .2   | .1 + .2         \
-|    ```       | ```           |
-```
-
-This is parsed below:
-
-|Markdown|Rendered HTML|
-|---|---|
-|```<br>*Italic*<br>```|_Italic_|
-|```<br>- Item 1<br>- Item 2<br>```|- Item 1<br>- Item 2|
-|````<br>```python<br>.1 + .2<br>```<br>````|```python<br>.1 + .2<br>```|
-
-### Rowspan
-`^^` indicates cells being merged above.  
-```markdown
-Stage | Direct Products | ATP Yields
-----: | --------------: | ---------:
-Glycolysis | 2 ATP ||
-^^ | 2 NADH | 3--5 ATP |
-Pyruvaye oxidation | 2 NADH | 5 ATP |
-Citric acid cycle | 2 ATP ||
-^^ | 6 NADH | 15 ATP |
-^^ | 2 FADH2 | 3 ATP |
-**30--32** ATP |||
-```
-
-This is parsed below:
-
-|Stage|Direct Products|ATP Yields|
-|--:|--:|--:|
-|Glycolysis|2 ATP|   |
-|2 NADH|3–5 ATP|
-|Pyruvaye oxidation|2 NADH|5 ATP|
-|Citric acid cycle|2 ATP|   |
-|6 NADH|15 ATP|
-|2 FADH2|3 ATP|
-|**30–32** ATP|   |   |
-
-### Multiline Header
-```tx
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-```
-
-rendered as:
-
-||Grouping|   |
-|---|---|---|
-|First Header|Second Header|Third Header|
-|---|---|---|
-|Content|_Long Cell_|   |
-
-### Headerless
-Table header can be eliminated.
-
-```markdown
-|--|--|--|--|--|--|--|--|
-|♜|  |♝|♛|♚|♝|♞|♜|
-|  |♟|♟|♟|  |♟|♟|♟|
-|♟|  |♞|  |  |  |  |  |
-|  |♗|  |  |♟|  |  |  |
-|  |  |  |  |♙|  |  |  |
-|  |  |  |  |  |♘|  |  |
-|♙|♙|♙|♙|  |♙|♙|♙|
-|♖|♘|♗|♕|♔|  |  |♖|
-```
-
-This is parsed below:
-
-|   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|
-|♜||♝|♛|♚|♝|♞|♜|
-||♟|♟|♟||♟|♟|♟|
-|♟||♞||||||
-||♗|||♟||||
-|||||♙||||
-||||||♘|||
-|♙|♙|♙|♙||♙|♙|♙|
-|♖|♘|♗|♕|♔|||♖|
-
-## Behind the scene
-Due to the restriction of the current Obsidian API, the built-in markdown parser is not configurable. Instead, This plugin includes an standalone Markdown parser [markdown-it](https://markdown-it.github.io/) with plugin[markdown-it-multimd-table](https://github.com/RedBug312/markdown-it-multimd-table), and table sections and the texts inside code block with language tag `tx` are passed to `markdown-it`. The internal links and embeds, however, are extracted and passed to Obsidian, so the core features of obsidian remain intact.
-
-
-
 ____
-# Dialogue Markdown #
+# Diagrams
+
+Mermaid is a Markdown-inspired tool that renders text into diagrams. For example, Mermaid can render flow charts, sequence diagrams, pie charts and more. For more information, see the [Mermaid documentation](https://mermaid-js.github.io/mermaid/#/).
+To create a Mermaid diagram, add Mermaid syntax inside a fenced code block with the `mermaid` language identifier. For more information about creating code blocks, see "[Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)."
+For example, you can create a flow chart by specifying values and arrows.
+
+````
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+````
+
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+
+**Note:** You may observe errors if you run a third-party Mermaid plugin when using Mermaid syntax on GitHub.
+
+
+
+<!-- <Flowchart> -->
+### Flowchart
+[Flowchart <a href="https://mermaid-js.github.io/mermaid/#/flowchart">docs</a>]
+
+```\mermaid
+flowchart LR
+
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
+```
+
+```mermaid
+flowchart LR
+
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
+```
+
+
+
+### Subgraph
+````
+```mermaid
+graph TB
+
+  SubGraph1 --> SubGraph1Flow
+  subgraph "SubGraph 1 Flow"
+  SubGraph1Flow(SubNode 1)
+  SubGraph1Flow -- Choice1 --> DoChoice1
+  SubGraph1Flow -- Choice2 --> DoChoice2
+  end
+
+  subgraph "Main Graph"
+  Node1[Node 1] --> Node2[Node 2]
+  Node2 --> SubGraph1[Jump to SubGraph1]
+  SubGraph1 --> FinalThing[Final Thing]
+end
+```
+````
+```mermaid
+graph TB
+
+  SubGraph1 --> SubGraph1Flow
+  subgraph "SubGraph 1 Flow"
+  SubGraph1Flow(SubNode 1)
+  SubGraph1Flow -- Choice1 --> DoChoice1
+  SubGraph1Flow -- Choice2 --> DoChoice2
+  end
+
+  subgraph "Main Graph"
+  Node1[Node 1] --> Node2[Node 2]
+  Node2 --> SubGraph1[Jump to SubGraph1]
+  SubGraph1 --> FinalThing[Final Thing]
+end
+```
+### Sequence_diagram
+[<a href="https://mermaid-js.github.io/mermaid/#/sequenceDiagram">Sequence Diagram docs</a> ]
+
+```
+sequenceDiagram
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
+```
+
+```mermaid
+sequenceDiagram
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
+```
+
+
+
+### Gantt_chart
+[<a href="https://mermaid-js.github.io/mermaid/#/gantt">Gantt docs</a>]
+
+```
+gantt
+    section Section
+    Completed :done,    des1, 2014-01-06,2014-01-08
+    Active        :active,  des2, 2014-01-07, 3d
+    Parallel 1   :         des3, after des1, 1d
+    Parallel 2   :         des4, after des1, 1d
+    Parallel 3   :         des5, after des3, 1d
+    Parallel 4   :         des6, after des4, 1d
+```
+
+```mermaid
+gantt
+    section Section
+    Completed :done,    des1, 2014-01-06,2014-01-08
+    Active        :active,  des2, 2014-01-07, 3d
+    Parallel 1   :         des3, after des1, 1d
+    Parallel 2   :         des4, after des1, 1d
+    Parallel 3   :         des5, after des3, 1d
+    Parallel 4   :         des6, after des4, 1d
+```
+
+
+### Class_diagram
+[<a href="https://mermaid-js.github.io/mermaid/#/classDiagram">Class Diagram docs</a>]
+
+```
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+<<Interface>> Class01
+Class09 --> C2 : Where am I?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  <<service>>
+  int id
+  size()
+}
+
+```
+
+```mermaid
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+<<Interface>> Class01
+Class09 --> C2 : Where am I?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  <<service>>
+  int id
+  size()
+}
+
+```
+
+### State_diagram
+[<a href="https://mermaid-js.github.io/mermaid/#/stateDiagram">State Diagram docs</a>]
+
+```
+stateDiagram-v2
+[*] --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
+```
+
+```mermaid
+stateDiagram-v2
+[*] --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
+```
+
+### Pie_chart
+[<a href="https://mermaid-js.github.io/mermaid/#/pie">Pie Chart docs</a>]
+
+```
+pie
+"Dogs" : 386
+"Cats" : 85.9
+"Rats" : 15
+```
+
+```mermaid
+pie
+"Dogs" : 386
+"Cats" : 85.9
+"Rats" : 15
+```
+
+
+### Bar_chart_gantt
+[<a href="https://mermaid-js.github.io/mermaid/#/gantt">Bar Chart docs</a>]
+
+```
+gantt
+    title Git Issues - days since last update
+    dateFormat  X
+    axisFormat %s
+
+    section Issue19062
+    71   : 0, 71
+    section Issue19401
+    36   : 0, 36
+    section Issue193
+    34   : 0, 34
+    section Issue7441
+    9    : 0, 9
+    section Issue1300
+    5    : 0, 5
+```
+
+```mermaid
+gantt
+    title Git Issues - days since last update
+    dateFormat  X
+    axisFormat %s
+
+    section Issue19062
+    71   : 0, 71
+    section Issue19401
+    36   : 0, 36
+    section Issue193
+    34   : 0, 34
+    section Issue7441
+    9    : 0, 9
+    section Issue1300
+    5    : 0, 5
+```
+
+### User_Journey_diagram
+[<a href="https://mermaid-js.github.io/mermaid/#/user-journey">User Journey diagram docs</a> ]
+
+```
+  journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 3: Me
+```
+
+```mermaid
+  journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 3: Me
+```
+
+### C_4_diagram
+[<a href="https://mermaid-js.github.io/mermaid/#/c4c">C 4 Diagram docs</a>]
+
+```
+C4Context
+title System Context diagram for Internet Banking System
+
+Person(customerA, "Banking Customer A", "A customer of the bank, with personal bank accounts.")
+Person(customerB, "Banking Customer B")
+Person_Ext(customerC, "Banking Customer C")
+System(SystemAA, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.")
+
+Person(customerD, "Banking Customer D", "A customer of the bank, <br/> with personal bank accounts.")
+
+Enterprise_Boundary(b1, "BankBoundary") {
+
+  SystemDb_Ext(SystemE, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
+
+  System_Boundary(b2, "BankBoundary2") {
+    System(SystemA, "Banking System A")
+    System(SystemB, "Banking System B", "A system of the bank, with personal bank accounts.")
+  }
+
+  System_Ext(SystemC, "E-mail system", "The internal Microsoft Exchange e-mail system.")
+  SystemDb(SystemD, "Banking System D Database", "A system of the bank, with personal bank accounts.")
+
+  Boundary(b3, "BankBoundary3", "boundary") {
+    SystemQueue(SystemF, "Banking System F Queue", "A system of the bank, with personal bank accounts.")
+    SystemQueue_Ext(SystemG, "Banking System G Queue", "A system of the bank, with personal bank accounts.")
+  }
+}
+
+BiRel(customerA, SystemAA, "Uses")
+BiRel(SystemAA, SystemE, "Uses")
+Rel(SystemAA, SystemC, "Sends e-mails", "SMTP")
+Rel(SystemC, customerA, "Sends e-mails to")
+```
+
+```mermaid
+C4Context
+title System Context diagram for Internet Banking System
+
+Person(customerA, "Banking Customer A", "A customer of the bank, with personal bank accounts.")
+Person(customerB, "Banking Customer B")
+Person_Ext(customerC, "Banking Customer C")
+System(SystemAA, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.")
+
+Person(customerD, "Banking Customer D", "A customer of the bank, <br/> with personal bank accounts.")
+
+Enterprise_Boundary(b1, "BankBoundary") {
+
+  SystemDb_Ext(SystemE, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
+
+  System_Boundary(b2, "BankBoundary2") {
+    System(SystemA, "Banking System A")
+    System(SystemB, "Banking System B", "A system of the bank, with personal bank accounts.")
+  }
+
+  System_Ext(SystemC, "E-mail system", "The internal Microsoft Exchange e-mail system.")
+  SystemDb(SystemD, "Banking System D Database", "A system of the bank, with personal bank accounts.")
+
+  Boundary(b3, "BankBoundary3", "boundary") {
+    SystemQueue(SystemF, "Banking System F Queue", "A system of the bank, with personal bank accounts.")
+    SystemQueue_Ext(SystemG, "Banking System G Queue", "A system of the bank, with personal bank accounts.")
+  }
+}
+
+BiRel(customerA, SystemAA, "Uses")
+BiRel(SystemAA, SystemE, "Uses")
+Rel(SystemAA, SystemC, "Sends e-mails", "SMTP")
+Rel(SystemC, customerA, "Sends e-mails to")
+```
+
+
+Scroll to [Top](#introduction)
+____
+
+# Dialogue_Markdown
 Create dialogues in Markdown.
 
 ![dialogue](https://raw.githubusercontent.com/holubj/obsidian-dialogue-plugin/master/images/dialogue.png)
@@ -1923,9 +2080,10 @@ This example sets selected background colors for the first three unique dialogue
 ```
 
 
+Scroll to [Top](#introduction)
 ____
 
-## Math
+# Math
 
 > ...math expressions can be rendered in Markdown on GitHub using $$ as a delimiter for code blocks with math content or the $ delimiter for inline math expressions.
 
@@ -2019,129 +2177,9 @@ Color example: try `k = {\color{red}x} \mathbin{\color{blue}-} 2` for $k = {\col
 Other links:
 - [MathJax](https://www.mathjax.org/)
 - GitHub blog post [Math support in Markdown](https://github.blog/2022-05-19-math-support-in-markdown/)
-____
-## Glossary
-|Markdown|Result|
-|---|---|
-|<pre>Let's reference a glossary term. [^glossary]  <br>  <br>[^glossary]:glossary: Glossary     A section at the end ...</pre>|Let’s reference a glossary term.[[1]](https://rawgit.com/fletcher/human-markdown-reference/master/index.html#fn:4 "see footnote")<br><br>---<br><br>1. Glossary:<br>    <br>    A section at the end …  [↩](https://rawgit.com/fletcher/human-markdown-reference/master/index.html#fnref:4 "return to article")|
-
-____
-## Footnotes
-
-````
-Here is a simple footnote[^1].
-
-A footnote can also have multiple lines[^2].  
-
-You can also use words, to fit your writing style more closely[^note].
-
-[^1]: My reference.
-[^2]: Every new line should be prefixed with 2 spaces.  
-  This allows you to have a footnote with multiple lines.
-[^note]:
-    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
-    This footnote also has been made with a different syntax using 4 spaces for new lines.
-````
-Renders as:
-
-Here is a simple footnote[^1].
-
-A footnote can also have multiple lines[^2].  
-
-You can also use words, to fit your writing style more closely[^note].
-
-[^1]: My reference.
-[^2]: Every new line should be prefixed with 2 spaces.  
-  This allows you to have a footnote with multiple lines.
-[^note]:
-    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
-    This footnote also has been made with a different syntax using 4 spaces for new lines.
 
 
-____
-
-## Citations
-
-|Markdown|Result|
-|---|---|
-|<pre> Let's cite a fake book.[p. 42][#fake]  <br>  <br>[#fake]: John Doe. *A Totally Fake Book*. Vanity Press, 2006. </pre>|Let’s cite a fake book.[[p. 42, 1]](https://rawgit.com/fletcher/human-markdown-reference/master/index.html#fn:3 "Jump to citation")<br><br>---<br><br>1. John Doe. _A Totally Fake Book_. Vanity Press, 2006.|
-
-
-____
-# Links
-
-```
-[The-Ultimate-Markdown-Cheat-Sheet](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)
-```
-
-[The-Higsec Markdown Reference](https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md)
-
-```
-[The-Markdown-Reference-Sheet][reference text]
-
-[The-Markdown-Reference-Sheet][1]
-
-[Markdown-Reference-Sheet]
-
-[reference text]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
-[1]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
-[Markdown-Cheat-Sheet]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
-```
-
-[The-Markdown-Reference-Sheet][reference text]
-
-[The-Markdown-Reference-Sheet][1]
-
-[Markdown-Reference-Sheet]
-
-[reference text]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
-[1]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
-[Markdown Reference Sheet]: https://github.com/HighSec-org/support/blob/main/HighLinux%20Markdown.md
-
-
-```
-[Example of a relative link](rl.md)
-```
-
-[Example of a relative link](rl.md)
-
-
-____
-## GitLab-specific references[](https://docs.gitlab.com/ee/user/markdown.html#gitlab-specific-references "Permalink")
-
-GitLab Flavored Markdown renders GitLab-specific references. For example, you can reference an issue, a commit, a team member, or even an entire project team. GitLab Flavored Markdown turns that reference into a link so you can navigate between them. All references to projects should use the **project slug** rather than the project name.
-
-Additionally, GitLab Flavored Markdown recognizes certain cross-project references and also has a shorthand version to reference other projects from the same namespace.
-
-GitLab Flavored Markdown recognizes the following:
-
-|references|input|cross-project reference|shortcut inside same namespace|
-|---|---|---|---|
-|specific user|`@user_name`|||
-|specific group|`@group_name`|||
-|entire team|[`@all`](https://docs.gitlab.com/ee/user/discussions/index.html#mentioning-all-members)|||
-|project|`namespace/project>`|||
-|issue|`#123`|`namespace/project#123`|`project#123`|
-|merge request|`!123`|`namespace/project!123`|`project!123`|
-|snippet|`$123`|`namespace/project$123`|`project$123`|
-|[epic](https://docs.gitlab.com/ee/user/group/epics/index.html)|`&123`|`group1/subgroup&123`||
-|[iteration](https://docs.gitlab.com/ee/user/group/iterations/index.html)|`*iteration:"iteration title"`|||
-|[vulnerability](https://docs.gitlab.com/ee/user/application_security/vulnerabilities/index.html) 1|`[vulnerability:123]`|`[vulnerability:namespace/project/123]`|`[vulnerability:project/123]`|
-|feature flag|`[feature_flag:123]`|`[feature_flag:namespace/project/123]`|`[feature_flag:project/123]`|
-|label by ID|`~123`|`namespace/project~123`|`project~123`|
-|one-word label by name|`~bug`|`namespace/project~bug`|`project~bug`|
-|multi-word label by name|`~"feature request"`|`namespace/project~"feature request"`|`project~"feature request"`|
-|scoped label by name|`~"priority::high"`|`namespace/project~"priority::high"`|`project~"priority::high"`|
-|project milestone by ID|`%123`|`namespace/project%123`|`project%123`|
-|one-word milestone by name|`%v1.23`|`namespace/project%v1.23`|`project%v1.23`|
-|multi-word milestone by name|`%"release candidate"`|`namespace/project%"release candidate"`|`project%"release candidate"`|
-|specific commit|`9ba12248`|`namespace/project@9ba12248`|`project@9ba12248`|
-|commit range comparison|`9ba12248...b19a04f5`|`namespace/project@9ba12248...b19a04f5`|`project@9ba12248...b19a04f5`|
-|repository file references|`[README](doc/README.md)`|||
-|repository file line references|`[README](doc/README.md#L13)`|||
-|[alert](https://docs.gitlab.com/ee/operations/incident_management/alerts.html)|`^alert#123`|`namespace/project^alert#123`|`project^alert#123`|
-|contact|`[contact:test@example.com]`|||
-
+Scroll to [Top](#introduction)
 ____
 
 # Images
@@ -2166,7 +2204,10 @@ ____
 ```
 
 <img src="https://images.unsplash.com/photo-1415604934674-561df9abf539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2772&q=80" width="100" height="100" border="10"/>
+
+Scroll to [Top](#introduction)
 ____
+
 # Alignments
 ```
 <p align="left">
@@ -2198,6 +2239,7 @@ ____
 <img src="https://images.unsplash.com/photo-1415604934674-561df9abf539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2772&q=80" width="100" height="100" border="10"/>
 </p>
 
+Scroll to [Top](#introduction)
 
 
 
